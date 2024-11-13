@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  :root {
+    --bg-color: #F5F5F5;
+    --second-color: #E4E4E4;
+    --btn-color: #1D1C1C;
+    --txt-color: #1D1C1C;
+    --footer-copyright-color: #A6A6A6;
+    --hover-color: #646464;
+    --bigScreen-heroImg: url('/assests/img/heroPage/Img-hero-3.png');
+    --smallScreen-heroImg: url('/assests/img/heroPage/small_screen-heroPic.png');
+    --shadow-color: rgb(0, 0, 0, 0.1);
+  
+  }
+  
+  body.dark{
+    --bg-color: rgb(30, 32, 33);
+    --second-color: rgb(39, 43, 44);;
+    --btn-color: #616161;
+    --txt-color: #e8e6e3;
+    --footer-copyright-color: rgb(74, 80, 84);
+    --hover-color: #b3b3b3;
+    --shadow-color:rgb(255, 255, 255, 0.1);
+  }
+
+  #mode{
+    margin-right: 100%;
+  }
+
+  body{
+    background-color: var(--bg-color);
+  }
+  h1{
+    color: var(--txt-color);
+  }

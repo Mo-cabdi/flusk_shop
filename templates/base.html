@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>ExClusive</title>
+
+  {% block head %}{% endblock %}
+</head>
+
+<body>
+  <header>
+    <div class='hed__icons'> 
+        <a href="{{ url_for('cart') }}">
+          <i class='bx bx-shopping-bag' id="shopping-bag__icon"></i>
+        </a>
+        <a href="{{url_for('account')}}">
+          <i class='bx bx-user' id="user__icon"></i>
+        </a>
+        <i class='bx bx-sun' id="mode"></i>
+    </div>
+  </header>
+
+  
+  {% block body %}{% endblock %}
+
+  <script src="{{ url_for('static', filename='scripts/base.js') }}"></script>
+</body>
+</html>
